@@ -1,9 +1,9 @@
 const { verifyMessage } = require("./dist/main");
 
-const address = "RS4EYELZhxMtDAuyrQimVrcSnaeaLCXeo6";
-const message = "Hello world";
+const address = "TcsCu4yjc2GFZCXPVkxQ6E54MWCHkdT9z2";
+const message = "902392";
 const signature =
-  "H2zo48+tI/KT9eJrHt7PLiEBMaRn1A1Eh49IFu0MbfhAFBxVc0FG2UE5E79PCbhd9KexijsQxYvNM6AsVn9EAEo=";
+  "IM2pxWRW2csCRedLajB7ji7swNniPu2DIKPg6FX86Su4dnr5FNkZNBMSztFICDRnpl7lgBmTRN2aWLLToR17TYk=";
 
 test("Verify valid message signature", () => {
   const result = verifyMessage(message, address, signature);
