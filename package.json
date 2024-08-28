@@ -1,6 +1,6 @@
 {
   "name": "@Telestai-Project/telestai-message",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Sign and Verify messages in Telestai",
   "source": "index.ts",
   "main": "dist/main.js",
