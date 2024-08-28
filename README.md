@@ -1,17 +1,15 @@
-# ravencoin-message
+# telestai-message
 
-Sign and Verify messages in Ravencoin in JavaScript, primarly for Node.js
+Sign and Verify messages in Telestai in JavaScript, primarly for Node.js
 
 ## If you want to use it in the browser, use Browserify
 
-@ravenrebels/ravencoin-message is based on 'bitcoinjs-lib' which uses tons of Node stuff.
-
-To make that work in the browser you need to use Browserify
+@Telestai-Project/telestai-message is based on 'bitcoinjs-lib'.
 
 ## install
 
 ```
-npm install @ravenrebels/ravencoin-message
+npm install @Telestai-Project/telestai-message
 
 //If you need to sign messages,  install CoinKey
 npm install coinkey
@@ -20,7 +18,7 @@ npm install coinkey
 ## How to use
 
 ```
-const { sign, verifyMessage } = require("@ravenrebels/ravencoin-message");
+const { sign, verifyMessage } = require("@Telestai-Project/telestai-message");
 
 //coinkey helps us convert from WIF to privatekey
 const CoinKey = require("coinkey");
