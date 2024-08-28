@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
       - release
 
 jobs:
@@ -26,8 +25,10 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Archive dist folder
-        run: tar -czf dist.tar.gz dist
+      - name: Get the version from package.json
+        id: get_version
+        run: |
+          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         id: create_release
@@ -35,8 +36,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.sha }}
-          release_name: Release ${{ github.sha }}
+          tag_name: "v${{ env.VERSION }}"  # Use version as tag
+          release_name: "Release v${{ env.VERSION }}"
           draft: false
           prerelease: false
 
