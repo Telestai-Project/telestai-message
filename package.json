@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/Telestai-Project/telestai-message#readme",
   "dependencies": {
-    "bitcoinjs-message": "^2.2.0"
+    "bitcoinjs-lib": "^7.0.0-rc.0",
+    "bitcoinjs-message": "^2.2.0",
+    "ecpair": "^3.0.0-rc.0",
+    "tiny-secp256k1": "^2.2.3"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.8.3",
