@@ -1,6 +1,6 @@
 {
   "name": "@Telestai-Project/telestai-message",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "Sign and Verify messages in Telestai",
   "source": "index.ts",
   "main": "dist/main.js",
@@ -18,7 +18,7 @@
     "Telestai",
     "TLS"
   ],
-  "author": "Dick Henrik Larsson / Raven Rebels",
+  "author": "Dick Henrik Larsson / Raven Rebels / Telestai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Telestai-Project/telestai-message/issues"
